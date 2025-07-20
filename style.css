@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+.main-header {
+  background: #222;
+  color: #fff;
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.container.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo-name {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.site-name {
+  margin-left: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 2rem 0 2rem; /* top padding for fixed header */
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero-left .big-text {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-left .small-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  font-size: 4rem;
+  font-weight: 700;
+  border: 3px solid #111;
+  padding: 2rem 3rem;
+  display: inline-block;
+  background: #fff;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 100px;
+  }
+  .hero-right, .hero-left {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .hero-img {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    padding: 1.5rem 2rem;
+  }
+}
